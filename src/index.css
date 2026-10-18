@@ -227,4 +227,30 @@ nav a:active {
   }
 }
 
+  
+/* NAVIGATION INTERACTIONS */
+
+nav a {
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #d2b07c;
+  text-shadow: 0 0 16px rgba(210, 176, 124, 0.4);
+  transform: translateY(-3px);
+}
+
+nav a:active {
+  transform: scale(0.95);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  nav a {
+    transition: none;
+  }
+}
+
 }
