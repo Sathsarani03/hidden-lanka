@@ -200,4 +200,31 @@ nav a, nav button {
   .about-story-card:hover {
     transform: none;
   }
+
+  
+/* Modern navigation hover effects */
+
+nav a {
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #d2b07c;
+  text-shadow: 0 0 14px rgba(210, 176, 124, 0.3);
+  transform: translateY(-2px);
+}
+
+nav a:active {
+  transform: scale(0.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  nav a {
+    transition: none;
+  }
+}
+
 }
