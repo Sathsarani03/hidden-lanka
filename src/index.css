@@ -98,4 +98,8 @@
     width: 180px;
     height: 240px;
   }
+
+  .cinema-title, .cinema-title em {
+  text-shadow: 0 3px 10px rgba(235,235,235,.8), 0 0 28px rgba(220,225,225,.6), 0 0 55px rgba(200,205,205,.4);
+}
 }
