@@ -100,6 +100,6 @@
   }
 
   .cinema-title, .cinema-title em {
-  text-shadow: 0 3px 10px rgba(235,235,235,.8), 0 0 28px rgba(220,225,225,.6), 0 0 55px rgba(200,205,205,.4);
+  text-shadow: 0 3px 8px rgba(230,230,230,.55), 0 0 22px rgba(210,215,215,.35), 0 0 45px rgba(190,195,195,.2);
 }
 }
