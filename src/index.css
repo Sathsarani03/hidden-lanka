@@ -46,7 +46,7 @@
 /* Arial heading */
 .cinema-title,
 .cinema-title em {
-  font-family: 'Roboto' , Helvetica, sans-serif !important;
+  font-family:'Roboto', Helvetica, sans-serif !important;
   font-style: normal;
   font-weight: 800;
   letter-spacing: -0.065em;
@@ -99,8 +99,7 @@
     width: 180px;
     height: 240px;
   }
-
-  .cinema-title, .cinema-title em {
-  text-shadow: 0 3px 8px rgba(230,230,230,.55), 0 0 22px rgba(210,215,215,.35), 0 0 45px rgba(190,195,195,.2);
 }
+.cinema-title, .cinema-title em {
+  text-shadow: 0 3px 8px rgba(230,230,230,.55), 0 0 22px rgba(210,215,215,.35), 0 0 45px rgba(190,195,195,.2);
 }
