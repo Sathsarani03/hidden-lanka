@@ -1,0 +1,22 @@
+HIDDEN LANKA — CINEMATIC BOTTOM CAROUSEL UPGRADE
+
+OPTION A (RECOMMENDED): REPLACE ONLY TWO FILES
+1. Stop the VS Code development server with Ctrl+C.
+2. Back up your existing hidden-Lanka folder.
+3. Extract this ZIP.
+4. Copy these files from the extracted hidden-lanka folder into the SAME paths in your existing project:
+   src/pages/Home.jsx
+   src/index.css
+5. Keep your existing Navbar.jsx if you already have the floating glass menu.
+   If your menu is still basic, also copy src/components/Navbar.jsx.
+6. In your existing project folder, run:
+   npm.cmd install
+   npm.cmd run dev
+7. Open http://localhost:5173/
+
+OPTION B: NEW STANDALONE PROJECT
+Extract the ZIP, open the inner hidden-lanka folder in VS Code, run npm.cmd install and npm.cmd run dev.
+
+CAROUSEL: arrow buttons, clickable cards, keyboard left/right arrows when focused, touch swipes, autoplay every 6.5 seconds. Hover/focus pauses autoplay. Click center card to open its details.
+
+IMPORTANT: Existing images are generic illustrative Unsplash images and do not depict the named Sri Lankan destinations. Replace them with correctly licensed, location-accurate photos before public launch.

@@ -1,0 +1,16 @@
+HIDDEN LANKA — MODERN CAROUSEL UPGRADE
+
+1. Stop the running Vite server with Ctrl+C in VS Code.
+2. BACK UP your existing hidden-Lanka folder.
+3. Open this ZIP and copy ONLY these three files into the corresponding locations of your existing project, replacing them:
+   src/components/Navbar.jsx
+   src/pages/Home.jsx
+   src/index.css
+   (Or use the entire updated project if you have not customized anything.)
+4. In VS Code terminal in the folder with package.json, run:
+   npm.cmd install
+   npm.cmd run dev
+5. Open http://localhost:5173/ in Chrome.
+6. Use left/right arrows, side cards, dots, or swipe to rotate places. Carousel also auto-rotates.
+
+NOTE: Photos are generic Unsplash illustrative placeholders, not authenticated photos of named Sri Lankan destinations. Replace with properly licensed destination photography before publishing.

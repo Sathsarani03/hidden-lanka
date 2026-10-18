@@ -1,0 +1,101 @@
+@import "tailwindcss";
+:root{font-family:'DM Sans',sans-serif;color:#f3eee3;background:#101d19;font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px}button,input,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none}::selection{background:#cfaa71;color:#101d19}.serif{font-family:'Playfair Display',serif}.container-wide{width:min(1320px,calc(100% - 48px));margin-inline:auto}.eyebrow{letter-spacing:.3em;text-transform:uppercase;font-size:11px;font-weight:700;color:#d2b07c}.section-title{font-family:'Playfair Display',serif;font-size:clamp(2.7rem,6vw,5.8rem);line-height:1.06;letter-spacing:-.04em}.glass{background:rgba(14,27,22,.52);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.15)}.pill{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:15px 24px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:transform .3s,background .3s}.pill:hover{transform:translateY(-3px)}.pill-light{background:#eae3d3;color:#16261f}.pill-dark{background:#213e31;color:#fff}.field{width:100%;background:#182c24;border:1px solid #486051;border-radius:14px;padding:15px 17px;color:white;outline:none}.field:focus{border-color:#d2b07c}.noise:after{content:"";pointer-events:none;position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.13),rgba(0,0,0,.45) 65%,rgba(10,24,18,.95));z-index:0}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Premium floating navigation and rotating destination hero */
+.modern-nav{background:rgba(13,32,24,.72);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);box-shadow:0 18px 60px rgba(0,0,0,.17)}
+.orbit-hero{background:#101d19}.orbit-arrow{display:grid;place-items:center;width:46px;height:46px;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(255,255,255,.08);color:white;transition:background .25s,transform .25s}.orbit-arrow:hover{background:#dfc59b;color:#14291e;transform:translateY(-3px)}
+.orbit-side:hover img{transform:scale(1.08)}.orbit-side img{transition:transform .65s}
+@media(max-width:640px){.orbit-stage{height:310px}.orbit-side{border-radius:16px}.orbit-side span:last-child{font-size:8px;overflow-wrap:anywhere}.orbit-hero{min-height:900px}}
+
+/* Cinematic bottom-orbit homepage */
+.cinema-hero{position:relative;isolation:isolate;min-height:960px;min-height:max(960px,100svh);overflow:hidden;background:#101e18;color:#f3eee3}
+.cinema-background{position:absolute;inset:0;background-size:cover;background-position:center;z-index:-3}
+.cinema-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(6,22,16,.75),rgba(6,22,16,.28) 75%),linear-gradient(180deg,rgba(8,24,17,.3) 0%,rgba(8,24,17,.12) 35%,rgba(8,24,17,.9) 76%,#101d19 100%)}
+.cinema-content{position:relative;padding-top:175px;padding-bottom:105px;display:flex;flex-direction:column;min-height:960px;min-height:max(960px,100svh)}
+.cinema-kicker,.cinema-overline,.cinema-small-label{font-size:10px;font-weight:700;letter-spacing:.29em}.cinema-kicker{display:flex;align-items:center;gap:14px;color:#e2cfac}.cinema-line{width:34px;height:1px;background:#e2cfac;display:inline-block}.cinema-title-block{margin-top:clamp(35px,6vh,95px);max-width:950px}.cinema-overline{color:#e2cfac;margin-bottom:12px}.cinema-title{font-family:'Playfair Display',Georgia,serif;font-size:clamp(4rem,10vw,10rem);letter-spacing:-.07em;line-height:.94;font-weight:500;white-space:normal}.cinema-title em{display:block;font-weight:400;color:#e2cfac}.cinema-place-label{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:12px;color:#f4e8d0}.cinema-place-label span{opacity:.5}.cinema-place-name{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.6rem,3vw,2.8rem);margin-top:10px}.cinema-description{font-size:13px;line-height:1.75;color:#f3eee3bb;max-width:490px;margin-top:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.cinema-cta{display:inline-flex;gap:15px;align-items:center;margin-top:20px;padding:13px 20px;border-radius:99px;background:#eae3d3;color:#152b21;font-size:12px;font-weight:700;transition:transform .3s,background .3s}.cinema-cta:hover{transform:translateY(-3px);background:#fff}
+.cinema-carousel-area{margin-top:auto;padding-top:70px}.cinema-carousel-header{display:flex;align-items:end;justify-content:space-between;gap:16px}.cinema-small-label{color:#d9bb8a}.cinema-carousel-header h3{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.3rem,2.3vw,2rem);margin-top:7px}.cinema-counter{font-size:19px;letter-spacing:.16em}.cinema-counter span{color:#ffffff70}.cinema-carousel-controls{display:flex;align-items:center;gap:14px;margin-top:18px}.cinema-arrow{flex:none;width:46px;height:46px;border:1px solid #ffffff70;border-radius:50%;display:grid;place-items:center;color:white;background:#ffffff10;transition:background .2s}.cinema-arrow:hover{background:#eae3d3;color:#13281f}.cinema-carousel-stage{position:relative;flex:1;height:225px;min-width:0;overflow:hidden;outline-offset:5px}.cinema-card{position:absolute;left:50%;top:5px;margin-left:-125px;width:250px;height:205px;border-radius:17px;background-position:center;background-size:cover;border:1px solid #ffffff55;text-align:left;box-shadow:0 18px 45px #0008;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;will-change:transform,opacity}.cinema-card-active{border:2px solid #e2cfac}.cinema-card-category{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#e8d5b2}.cinema-card-name{font-family:'Playfair Display',Georgia,serif;font-size:22px}.cinema-dots{display:flex;justify-content:center;gap:9px;margin-top:13px}.cinema-dots button{height:5px;width:19px;background:#ffffff55;border-radius:10px;transition:width .3s,background .3s}.cinema-dots button.active{width:42px;background:#e2cfac}.cinema-scroll{position:absolute;right:35px;bottom:20px;display:flex;gap:10px;align-items:center;font-size:9px;letter-spacing:.2em;color:#eae3d3a8}
+@media(min-width:1100px){.cinema-carousel-area{max-width:1020px;margin-left:auto;margin-right:auto;width:100%}.cinema-card{width:285px;margin-left:-142px;height:215px}.cinema-carousel-stage{height:235px}}
+@media(max-width:700px){.cinema-hero,.cinema-content{min-height:920px;min-height:max(920px,100svh)}.cinema-content{padding-top:135px;padding-bottom:85px}.cinema-kicker{font-size:8px;letter-spacing:.13em}.cinema-title{font-size:clamp(3.6rem,14vw,6rem)}.cinema-title-block{margin-top:52px}.cinema-carousel-area{padding-top:55px}.cinema-carousel-controls{gap:5px}.cinema-arrow{width:36px;height:36px}.cinema-carousel-stage{height:190px}.cinema-card{width:175px;margin-left:-87px;height:175px;padding:12px}.cinema-card-name{font-size:17px}.cinema-card-category{font-size:8px}.cinema-description{-webkit-line-clamp:3}.cinema-scroll{right:20px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.cinema-background,.cinema-card{transition:none!important}}
+
+/* Hidden Lanka — homepage layout update */
+
+.cinema-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.cinema-title-block {
+  margin-top: clamp(90px, 12vh, 150px);
+}
+
+.cinema-carousel-area {
+  margin-top: clamp(24px, 4vh, 50px);
+  margin-bottom: 65px;
+}
+
+/* Keep the carousel above the hero background */
+.cinema-content,
+.cinema-carousel-area {
+  position: relative;
+  z-index: 2;
+}
+
+/* Arial heading */
+.cinema-title,
+.cinema-title em {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 0.95;
+}
+
+/* Optional: display carousel before the large heading */
+.cinema-carousel-area {
+  order: 1;
+}
+
+.cinema-title-block {
+  order: 2;
+}
+
+/* Bigger cinematic destination carousel */
+
+.cinema-carousel-stage {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  overflow: visible;
+}
+
+.cinema-card {
+  width: clamp(170px, 22vw, 300px);
+  height: clamp(230px, 30vw, 370px);
+  border-radius: 22px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.cinema-card-active {
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(210, 176, 124, 0.5);
+}
+
+@media (max-width: 768px) {
+  .cinema-carousel-stage {
+    height: 240px;
+  }
+
+  .cinema-card {
+    width: 180px;
+    height: 240px;
+  }
+}
